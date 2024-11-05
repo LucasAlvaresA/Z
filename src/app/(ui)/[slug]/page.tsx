@@ -22,7 +22,7 @@ export default function Page() {
                     className="bg-gray-500 h-28 bg-no-repeat bg-cover bg-center"
                     style={{ backgroundImage: "url(" + user.cover + ")" }}
                 ></div>
-                <div className="-mt-12 flex justify-between items-end">
+                <div className="-mt-12 flex justify-between items-end px-6">
                     <img
                         src={user.avatar}
                         alt={user.name}
