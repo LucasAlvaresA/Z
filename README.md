@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# <div align="center"> Z </div>
+
+<div align="center">
+    <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"/>
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+</div>
+
+## Project Overview
+
+This is a **Frontend-only** project built using **Next.js**, **TypeScript**, and **TailwindCSS**. There is **no backend** or **API requests** involved in this project. The primary goal of this project is to display the frontend and its functionalities, which include a user interface with interactive components and dynamic content rendering.
+
+The project demonstrates various frontend features and components such as navigation, layout design, and UI elements, but it doesn't interact with any external server or database.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy of this project up and running, follow these simple example steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   Clone the repo:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    ```bash
+    git clone git@github.com:LucasAlvaresA/Z.git
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-   Install NPM packages:
 
-## Learn More
+    **Note:** If you encounter issues with conflicts or incompatible package versions during installation, run the following command to force the installation of dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    npm install --force
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    The `--force` flag is used to ignore warnings about incompatible versions of packages and ensure that all dependencies are installed correctly.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-   Run the project:
 
-## Deploy on Vercel
+    ```bash
+    npm run dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Routes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Since this project is built with **Next.js**, the routing is handled automatically using the **File System-based Routing**.
+
+Here are some of the main routes:
+
+-   `/` — The homepage of the project, where the main content and layout are displayed.
+-   `/signin` — A demo page for the user sign-in process with a form layout (no backend functionality).
+-   `/signup` — A placeholder page demonstrating a user sign-up form (no backend functionality).
+-   `/profile` — A profile page showcasing the layout for user information display (static content).
+
+You can add more pages or modify the existing ones by simply adding new files to the **`pages/`** directory.
+
+## Conclusion
+
+This project is a simple frontend-focused application designed to showcase various web development concepts and UI elements. Since there is no backend or API integration, all interactions and functionality are purely client-side.
+
+Feel free to explore, modify, and expand upon this project as you see fit.
