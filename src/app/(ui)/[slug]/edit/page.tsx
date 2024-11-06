@@ -12,7 +12,7 @@ export default function Page() {
 
     return (
         <div>
-            <GeneralHeader backHref="/">
+            <GeneralHeader backHref={`/${user.slug}`}>
                 <div className="font-bold text-lg">Editar perfil</div>
             </GeneralHeader>
             <section className="border-b-2 border-gray-900">

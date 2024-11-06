@@ -13,7 +13,7 @@ export const RecommendationItem = ({ user }: Props) => {
     const [following, setFollowing] = useState(false);
 
     const handleFollowButton = () => {
-        setFollowing(true);
+        setFollowing(!following);
     };
 
     return (
@@ -36,11 +36,18 @@ export const RecommendationItem = ({ user }: Props) => {
                 </div>
             </div>
             <div className="pl-2 w-20">
-                {!following && (
+                {!following ? (
                     <Button
                         label="Seguir"
                         onClick={handleFollowButton}
                         size={3}
+                    />
+                ) : (
+                    <Button
+                        label="Seguindo"
+                        onClick={handleFollowButton}
+                        size={3}
+                        variant="outline"
                     />
                 )}
             </div>

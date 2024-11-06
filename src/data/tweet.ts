@@ -1,10 +1,10 @@
 import { Tweet } from "@/types/tweet";
-import { user } from "./user";
+import { user, otherUsers } from "./user";
 
 export const tweet: Tweet = {
     id: 123,
     user: user,
-    body: "Outro dia Magico",
+    body: "Outro dia Mágico",
     image: "https://images.wondershare.com/repairit/aticle/2021/08/twitter-header-photo-issues-1.jpg",
     likeCount: 523,
     commentCount: 61,
@@ -13,3 +13,66 @@ export const tweet: Tweet = {
     retweeted: false,
     dataPost: new Date(2024, 8, 1, 10, 0, 0),
 };
+
+export const otherTweets: Tweet[] = [
+    {
+        id: 124,
+        user: otherUsers[0],
+        body: "A experiência do usuário é tudo. #UX #Design",
+        image: "https://images.unsplash.com/photo-1555435023-847a72c4f04b",
+        likeCount: 340,
+        commentCount: 45,
+        retweetCount: 20,
+        liked: true,
+        retweeted: false,
+        dataPost: new Date(2024, 8, 2, 14, 30, 0),
+    },
+    {
+        id: 125,
+        user: otherUsers[1],
+        body: "Escalabilidade é a chave para um sistema duradouro! #Tech #Coding",
+        image: "https://images.unsplash.com/photo-1523296261183-22d126fd4272",
+        likeCount: 290,
+        commentCount: 30,
+        retweetCount: 50,
+        liked: false,
+        retweeted: true,
+        dataPost: new Date(2024, 8, 3, 9, 0, 0),
+    },
+    {
+        id: 126,
+        user: otherUsers[0],
+        body: "Hoje finalizei o design do novo projeto! #Feliz",
+        image: "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9",
+        likeCount: 180,
+        commentCount: 12,
+        retweetCount: 5,
+        liked: true,
+        retweeted: false,
+        dataPost: new Date(2024, 8, 4, 11, 0, 0),
+    },
+    {
+        id: 127,
+        user: otherUsers[1],
+        body: "Nada como resolver um bug antigo! #Programação",
+        image: "https://images.unsplash.com/photo-1555949963-aa79dcee981d",
+        likeCount: 430,
+        commentCount: 25,
+        retweetCount: 15,
+        liked: false,
+        retweeted: true,
+        dataPost: new Date(2024, 8, 5, 15, 45, 0),
+    },
+    {
+        id: 128,
+        user: otherUsers[0],
+        body: "Dicas de design responsivo para apps #DesignResponsivo",
+        image: "https://images.unsplash.com/photo-1506765515384-028b60a970df",
+        likeCount: 215,
+        commentCount: 34,
+        retweetCount: 10,
+        liked: true,
+        retweeted: false,
+        dataPost: new Date(2024, 8, 6, 13, 30, 0),
+    },
+];
