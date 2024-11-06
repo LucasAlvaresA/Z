@@ -1,7 +1,7 @@
 import { TweetPost } from "@/components/tweet/tweet-post";
 import { TweetItem } from "@/components/tweet/tweet.item";
 import { GeneralHeader } from "@/components/ui/general-header";
-import { tweet } from "@/data/tweet";
+import { answerTweetExample, tweet } from "@/data/tweet";
 
 export default function Page() {
     return (
@@ -14,9 +14,9 @@ export default function Page() {
                 <div className="border-y-8 border-gray-900">
                     <TweetPost />
                 </div>
-                <TweetItem tweet={tweet} hideComments />
-                <TweetItem tweet={tweet} hideComments />
-                <TweetItem tweet={tweet} hideComments />
+                {answerTweetExample.map((item, i) => {
+                    return <TweetItem key={i} tweet={item} hideComments />;
+                })}
             </div>
         </div>
     );

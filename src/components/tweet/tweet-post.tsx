@@ -20,12 +20,11 @@ export const TweetPost = () => {
                 />
             </div>
             <div className="flex-1">
-                <div
-                    className="min-h-14 outline-none text-lg text-white empty:before:text-gray-500 empty:before:content-[attr(data-placeholder)]"
-                    contentEditable
-                    role="textbox"
-                    data-placeholder="O que está acontecendo?"
-                ></div>
+                <textarea
+                    className="min-h-14 outline-none text-lg bg-transparent w-full text-white empty:before:text-gray-500 empty:before:content-[attr(data-placeholder)] resize-none overflow-hidden"
+                    placeholder="O que está acontecendo?"
+                ></textarea>
+
                 <div className="flex justify-between items-center mt-2">
                     <div onClick={handleImageUpload} className="cursor-pointer">
                         <FontAwesomeIcon icon={faImage} className="size-6" />

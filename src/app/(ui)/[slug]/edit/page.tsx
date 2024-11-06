@@ -8,8 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export default function Page() {
-    const isMe = true;
-
     return (
         <div>
             <GeneralHeader backHref={`/${user.slug}`}>
@@ -53,7 +51,7 @@ export default function Page() {
                     <TextArea
                         placeholder="Descreva você mesmo"
                         rows={4}
-                        value={user.bio}
+                        defaultValue={user.bio}
                     />
                 </label>
                 <label>
